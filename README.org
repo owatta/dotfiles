@@ -1,0 +1,7 @@
+#+title: Dotfiles
+
+My NixOS dotfiles.
+
+Everything is messy, stolen and subject to change. Read it if you
+absolutely must.
+

@@ -1,0 +1,13 @@
+auto-save-list/
+backups/
+eln-cache/
+elpa/
+eshell/
+history
+nov-places
+tramp
+transient/
+url/
+straight/
+hyprpaper.conf
+flake.lock
