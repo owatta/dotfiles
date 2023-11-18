@@ -63,6 +63,13 @@
   # bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
+
+  # mesa drivers
+  hardware.opengl.enable = true;
+  hardware.opengl.extraPackages = [ pkgs.mesa.drivers ];
+
+  # udev
+  services.udev.packages = [ pkgs.android-udev-rules ];
   
   # Configure keymap in X11
   services.xserver = {

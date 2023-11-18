@@ -1,9 +1,12 @@
-{ config, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 {
-  # TODO please change the username & home direcotry to your own
-  home.username = "user";
-  home.homeDirectory = "/home/user";
+  imports = [];
+  
+  home = {
+    username = "user";
+    homeDirectory = "/home/user";
+  };
 
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
@@ -30,7 +33,7 @@
   programs.git = {
     enable = true;
     userName = "owatta";
-    userEmail = "owatta@example.com";
+    userEmail = "arsenii.korniec@bk.ru";
   };
 
   # Packages that should be installed to the user profile.
@@ -84,6 +87,10 @@
     usbutils
     pciutils
     android-tools
+    android-file-transfer
+    
+    alacritty
+    
   ];
 
   programs.bash = {

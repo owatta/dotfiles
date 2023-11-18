@@ -48,7 +48,9 @@
 
 (use-package faces
   :custom-face
-  (default ((t (:family "Open Sans" :height 135))))
+  (default ((t (:family "Fantasque Sans Mono" :height 135))))
+  (mode-line ((t (:box (:line-width (10 . 8) :color "#000000" :style 'nil) :overline "dim grey"))))
+  (mode-line-inactive ((t (:box (:line-width (10 . 8) :color "#000000" :style 'nil) :overline "dim grey"))))
 ;;  (mode-line ((t (:box (:line-width (10 . 8) :color "#e7e7e7" :style 'nil)))))
   )
 
@@ -272,6 +274,9 @@
   (setq nov-unzip-args '("-xC" directory "-f" filename)))
 
 (use-package elfeed
+  :straight t)
+
+(use-package olivetti
   :straight t)
 
 ;; TODO:
