@@ -29,9 +29,10 @@
 
     ly
     # hyprland # see configuration.nix
-    hyprpaper wofi fantasque-sans-mono fira-code font-awesome
-    # google-cursor
-    waybar open-sans
+    hyprpaper wofi fantasque-sans-mono waybar
+    glib # for gsettings
+
+    bibata-cursors open-sans fira-code font-awesome
 
     grim wl-clipboard slurp
     
@@ -51,6 +52,7 @@
     usbutils pciutils android-tools android-file-transfer
     
     alacritty
+    telegram-desktop
     
   ];
 
