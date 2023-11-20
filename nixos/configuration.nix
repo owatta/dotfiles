@@ -124,12 +124,6 @@
     isNormalUser = true;
     description = "user";
     extraGroups = [ "networkmanager" "wheel" "sudo" ];
-    packages = with pkgs; [
-      SDL2.dev
-      pkg-config
-      lightdm
-      readline
-    ];
   };
 
   # Allow unfree packages
@@ -138,8 +132,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     fantasque-sans-mono
-     SDL2
+    git
+    fantasque-sans-mono
+    SDL2
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
