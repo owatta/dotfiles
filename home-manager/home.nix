@@ -21,35 +21,68 @@
   # encode the file content in nix configuration file directly home.file.".xxx".text = '' xxx
   # '';
 
-  programs.git = { enable = true; userName = "owatta"; userEmail = "arsenii.korniec@bk.ru";
+  programs.git = {
+    enable = true;
+    userName = "owatta";
+    userEmail = "arsenii.korniec@bk.ru";
   };
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
 
     ly
-    # hyprland # see configuration.nix
-    hyprpaper wofi fantasque-sans-mono waybar
+    hyprpaper
+    wofi
+    waybar
+    eww-wayland
     glib # for gsettings
 
-    bibata-cursors open-sans fira-code font-awesome
+    fantasque-sans-mono
+    bibata-cursors
+    open-sans
+    fira-code
+    font-awesome
 
-    grim wl-clipboard slurp
+    grim
+    wl-clipboard
+    slurp
+
+    libnotify
+    dunst
     
-    btop neofetch
+    
+    btop
+    neofetch
 
-    killall wget git gnupg zip unzip gnutar gawk
+    killall
+    wget
+    git
+    gnupg
+    zip
+    unzip
+    gnutar
+    gawk
 
-    firefox emacs
+    firefox
+    emacs
     # glamoroustoolkit
 
-    mpv imv
+    mpv
+    imv
 
-    sbcl ghc gdb gnumake gcc
+    sbcl
+    ghc
+    gdb
+    gnumake
+    gcc
 
-    xorg.xinit xorg.xauth
+    xorg.xinit
+    xorg.xauth
 
-    usbutils pciutils android-tools android-file-transfer
+    usbutils
+    pciutils
+    android-tools
+    android-file-transfer
     
     alacritty
     telegram-desktop
