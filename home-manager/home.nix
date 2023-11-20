@@ -21,9 +21,6 @@
   # encode the file content in nix configuration file directly home.file.".xxx".text = '' xxx
   # '';
 
-  # set cursor size and dpi for 4k monitor xresources.properties = { "Xcursor.size" = 16; "Xft.dpi" = 172;
-  # };
-
   programs.git = { enable = true; userName = "owatta"; userEmail = "arsenii.korniec@bk.ru";
   };
 

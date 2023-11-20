@@ -30,8 +30,10 @@
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
-        # > Our main nixos configuration file <
-        modules = [./nixos/configuration.nix];
+	# `coffee' is for my desktop
+	# `licorice is for my laptop'
+        modules = [./nixos/coffee.nix];
+	# modules = [./nixos/licorice.nix];
       };
     };
 
