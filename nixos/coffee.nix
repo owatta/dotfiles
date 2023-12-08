@@ -79,6 +79,9 @@
   # Wayland compositor
   programs.hyprland.enable = true;
 
+  # firmware
+  hardware.enableAllFirmware = true;
+  
   # bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
