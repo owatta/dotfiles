@@ -32,8 +32,8 @@
         specialArgs = {inherit inputs outputs;};
 	# `coffee' is for my desktop
 	# `licorice is for my laptop'
-        modules = [./nixos/coffee.nix];
-	# modules = [./nixos/licorice.nix];
+        # modules = [./nixos/coffee.nix];
+	      modules = [./nixos/licorice.nix];
       };
     };
 

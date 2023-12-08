@@ -20,6 +20,7 @@
 
 (use-package emacs
   :bind ("C-h" . 'delete-backward-char)
+        ("M-o" . 'other-window)
   :custom
   (tool-bar-mode nil)
   (menu-bar-mode nil)
@@ -49,8 +50,8 @@
 (use-package faces
   :custom-face
   (default ((t (:family "Fantasque Sans Mono" :height 135))))
-  (mode-line ((t (:box (:line-width (10 . 8) :color "#000000" :style 'nil) :overline "dim grey"))))
-  (mode-line-inactive ((t (:box (:line-width (10 . 8) :color "#000000" :style 'nil) :overline "dim grey"))))
+  ;; (mode-line ((t (:box (:line-width (10 . 8) :color "#000000" :style 'nil) :overline "dim grey"))))
+  ;; (mode-line-inactive ((t (:box (:line-width (10 . 8) :color "#000000" :style 'nil) :overline "dim grey"))))
 ;;  (mode-line ((t (:box (:line-width (10 . 8) :color "#e7e7e7" :style 'nil)))))
   )
 

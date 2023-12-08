@@ -75,6 +75,11 @@
   # Wayland compositor
   programs.hyprland.enable = true;
 
+  services.xserver.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
+
+
   # bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
@@ -131,6 +136,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    wineWowPackages.waylandFull
     home-manager
     git
     fantasque-sans-mono

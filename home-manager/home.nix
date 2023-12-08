@@ -42,7 +42,7 @@
     firefox emacs
     # glamoroustoolkit
 
-    mpv imv
+    mpv imv yt-dlp picard
 
     sbcl ghc gdb gnumake gcc
 
@@ -51,7 +51,8 @@
     usbutils pciutils android-tools android-file-transfer
     
     alacritty
-    
+
+    protonup-qt lutris
   ];
 
   programs.bash = { enable = true; enableCompletion = true; bashrcExtra = '' export PATH="$PATH:/usr/local/bin" # set PATH here
